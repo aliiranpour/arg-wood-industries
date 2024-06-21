@@ -47,7 +47,6 @@
   color: var(--color);
 }
 
-/* GalleryWrapper Styles */
 .gallery-wrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -57,8 +56,11 @@
 
 @media (max-width: 768px) {
   .gallery-wrapper {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 0.5rem;
+  }
+  .gallery-item{
+    font-size: 1rem;
   }
 }
 
@@ -72,6 +74,12 @@
 }
 .gallery-item {
   overflow: hidden;
+  text-decoration: none;
+  color: #000;
+  font-size: 0.9rem;
+}
+.gallery-item :hover{
+  color: #ac1e1e;
 }
 
 .gallery-item img {

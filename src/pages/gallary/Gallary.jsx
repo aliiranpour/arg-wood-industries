@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import './FilterableGalleryStyled.css'; // Import the CSS file
+import './FilterableGalleryStyled.css'; 
 import galleryData from '../../pages/gallary/galleryData';
+import { Link } from 'react-router-dom';
 
 const SearchableFilterableGallery = () => {
     const [galleryItems, setGalleryItems] = useState(galleryData);
@@ -72,14 +73,14 @@ const SearchableFilterableGallery = () => {
                     {galleryItems.map((currValue) => {
                         const { id, img, title } = currValue;
                         return (
-                            <div className='gallery-item mt-3' key={id}>
+                            <Link to={`/products/${id}`} className='gallery-item mt-3 mx-3' key={id}>
                                 <div>
                                     <img src={img} alt='gallery-img' className='gallery-item-image' />
                                 </div>
-                                <div className='gallery-item-info'>
+                                <div className='gallery-item-info mt-4'>
                                     <p className='d-flex justify-content-center mt-2'>{title}</p>
                                 </div>
-                            </div>
+                            </Link>
                         );
                     })}
                 </div>
