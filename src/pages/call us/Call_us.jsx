@@ -1,8 +1,11 @@
 import React from 'react'
+import ChatWidget from '../../components/Chatwidget/Chatpart'
 
 const Call_us = () => {
   return (
-    <div>Call_us</div>
+    <div>
+      <ChatWidget/>
+    </div>
   )
 }
 

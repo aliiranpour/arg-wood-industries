@@ -11,6 +11,7 @@ const SharedLayout = () => {
         <Col className=' content-wrapper'>
           <Outlet />
         </Col>
+
       </Row>
     </Container>
   );

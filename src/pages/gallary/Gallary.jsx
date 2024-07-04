@@ -9,7 +9,7 @@ const SearchableFilterableGallery = () => {
     const [isActive, setIsActive] = useState(0);
 
     const uniqueList = [
-        'all',
+        'همه محصولات',
         ...new Set(
             galleryData.map((currValue) => {
                 return currValue.category;
@@ -27,7 +27,7 @@ const SearchableFilterableGallery = () => {
         const category = uniqueList[activeIndex];
         let filteredData = galleryData;
 
-        if (category !== 'all') {
+        if (category !== 'همه محصولات') {
             filteredData = galleryData.filter((currValue) => currValue.category === category);
         }
 
