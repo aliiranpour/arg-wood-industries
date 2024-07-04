@@ -42,10 +42,10 @@ const BestProduct = ({ products }) => {
     >
       {products.map((product) => (
         <Link to={`/products/${product.id}`} key={product.id} className=' text-decoration-none'>
-          <div className="p-2 carousel-items" style={{ width: '100%' }}> 
+          <div className=" carousel-items w-75" > 
             <div className='carousel-image'>
               <img
-                className="d-block w-100"
+                className="d-block w-100 p-2"
                 src={product.img}
                 alt={product.title}
               />
