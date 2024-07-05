@@ -1,0 +1,18 @@
+.new-shared-layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .new-shared-layout > * {
+    flex-shrink: 0;
+  }
+  
+  .new-content-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 160px 0 90px 0; 
+  }
+  

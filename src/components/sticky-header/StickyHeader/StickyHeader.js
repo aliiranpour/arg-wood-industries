@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import './stickyHeader.style.css'
 import 'react-bootstrap'
 
-
 const StickyHeader = () => {
 
     const [isSticky, setIsSticky] = useState(false);

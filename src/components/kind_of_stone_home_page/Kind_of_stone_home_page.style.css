@@ -1,0 +1,69 @@
+.title-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0; /* Adjust as needed */
+  }
+  
+  .line-col {
+    flex-grow: 1;
+  }
+  
+  .line {
+    height: 2px; /* Thickness of the line */
+    background-color: black; /* Color of the line */
+  }
+  
+  .text-col {
+    padding: 0 10px; /* Space between the lines and the title */
+  }
+  
+  .title {
+    font-size: 2em; /* Size of the title text */
+    font-weight: bold; /* Make the title bold */
+    font-style: italic; /* Make the title italic */
+    text-align: center;
+  }
+  
+  .stone-col {
+    padding: 15px;
+  }
+  
+  .stone-item {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .stone-image {
+    width: 100%;
+    height: 200px; /* Set height to ensure all images are equal size */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    display: block;
+  }
+  
+  .stone-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    align-items: center; /* Center the title vertically */
+    justify-content: center; /* Center the title horizontally */
+    transform: translateY(100%);
+    transition: transform 0.5s ease;
+    opacity: 0;
+  }
+  
+  .stone-item:hover .stone-overlay {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+  .stone-title {
+    padding: 10px;
+    font-size: 1.5em;
+  }
+  

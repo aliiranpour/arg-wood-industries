@@ -1,20 +1,19 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
-import { Container, Row, Col } from 'react-bootstrap';
 import StickyHeader from '../sticky-header/StickyHeader/StickyHeader';
+import Footer from '../footer/Footer';
+import './Shared_layout.style.css'
 
-const SharedLayout = () => {
+const NewSharedLayout = () => {
   return (
-    <Container fluid dir="rtl">
+    <div className="new-shared-layout">
       <StickyHeader />
-      <Row Row={12}>
-        <Col className=' content-wrapper'>
-          <Outlet />
-        </Col>
-
-      </Row>
-    </Container>
+      <div className="new-content-wrapper">
+        <Outlet />
+      </div>
+      <Footer />
+    </div>
   );
 };
 
-export default SharedLayout;
+export default NewSharedLayout;

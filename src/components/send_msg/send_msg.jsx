@@ -1,5 +1,6 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
+import './send_msg.css'
 
 const Send_msg = () => {
   return (
@@ -7,7 +8,7 @@ const Send_msg = () => {
         <Row>
           <Col>
             <Row>
-              <label htmlFor="send_msg_name"> نام و نام خانوادگی </label>
+              <label htmlFor="send_msg_name" className='mb-2 mt-3'> نام و نام خانوادگی :</label>
             </Row>
             <Row>
               <input type="text" maxLength="24" id='send_msg_name'/>
@@ -17,7 +18,17 @@ const Send_msg = () => {
         <Row>
           <Col>
             <Row>
-              <label htmlFor="send_msg_email">ایمیل: </label>
+              <label htmlFor="send_msg_tel" className='mb-2 mt-3'> شماره تلفن:</label>
+            </Row>
+            <Row>
+              <input type="tel" id='send_msg_tel'/>
+            </Row>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <Row>
+              <label htmlFor="send_msg_email" className='mb-2 mt-3'>ایمیل: </label>
             </Row>
             <Row>
               <input type="email" label='send_msg_email' />
@@ -27,10 +38,10 @@ const Send_msg = () => {
         <Row>
           <Col>
             <Row>
-              <label htmlFor="send_msg_msg">پیام: </label>
+              <label htmlFor="send_msg_msg" className='mb-2 mt-3'>پیام: </label>
             </Row>
             <Row>
-              <textarea maxLength="120" id='send_msg_msg' />
+              <textarea maxLength="120" id='send_msg_msg'/>
             </Row>
           </Col>
         </Row>

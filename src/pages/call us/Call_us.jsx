@@ -1,11 +1,14 @@
 import React from 'react'
 import ChatWidget from '../../components/Chatwidget/Chatpart'
+import Cooperation from '../../components/Cooperation/Cooperation'
+import { Container } from 'react-bootstrap'
 
 const Call_us = () => {
   return (
-    <div>
-      <ChatWidget/>
-    </div>
+    <Container>
+
+      <Cooperation />
+    </Container>
   )
 }
 

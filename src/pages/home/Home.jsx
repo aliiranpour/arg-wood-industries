@@ -5,6 +5,8 @@ import GoftinoWidget from '../../components/Chatwidget/Chatpart';
 import BestProduct from '../../components/Best_products/Best_products';
 import galleryData from '../gallary/galleryData';
 import Why_arg from '../../components/Why-arg/Why-arg';
+import Cooperation from '../../components/Cooperation/Cooperation';
+import Kind_of_stone_home_page from '../../components/kind_of_stone_home_page/Kind_of_stone_home_page';
 
 const Home = () => {
   return (
@@ -13,15 +15,18 @@ const Home = () => {
         <Home_slider />
       </Row>
       <Row>
-        <Row className=' mt-5'>
-          <h3 className=' border-bottom mb-4 pb-4'> محصولات پرفروش </h3>
-        </Row>
+        <Kind_of_stone_home_page />
+      </Row>
+      <Row>
         <Row>
           <BestProduct products={galleryData} />  
         </Row>
       </Row>
       <Row>
         <Why_arg />
+      </Row>
+      <Row>
+        <Cooperation />
       </Row>
       <GoftinoWidget />
     </Container>
