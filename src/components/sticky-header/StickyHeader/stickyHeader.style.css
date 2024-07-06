@@ -3,8 +3,8 @@
     top: 0;
     left: 0;
     width: 100%;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     transition: all 0.3s ease;
     z-index: 1000;
     background-color: rgb(180, 6, 38);
@@ -24,7 +24,7 @@
   }
   
   .header-wrapper.sticked {
-    background-color: #b40626e6;
+    background-color: rgba(180, 6, 38);
     box-shadow: 0px 6px 24px -4px #000;
   }
   
@@ -45,6 +45,7 @@
   }
 
   main section:nth-child(even) {
-    background-color: rgba(180, 6, 38, 0.8);;
+    background-color: rgba(180, 6, 38, 0.8);
+    z-index: 1000;
   }
   
